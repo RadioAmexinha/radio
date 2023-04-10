@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="player.css">
+<script src="video.js"></script>
+<style>
+@font-face {
+   font-family: fonte1;
+   src: url(fonte100nome.ttf);
+}
+
+body {
+background: #183e7c url(img/image.jpg) no-repeat fixed top center;
+}
+</style>
+<div id="filme" align="center">
+<table border="1" width="687">
+<tr>
+<td>
+<video id="example_ideo_1" class="video-js vjs-default-skin" controls width="auto" height="380" poster="img/2.jpg">
+<source src="https://tinyurl.com/Demons-Imagine-Dragons-1080p" type='video/mp4;'/>
+<!-- <track kind="subtitles" srclang="pt-br" label="Pt-Br" src="026.vtt"></track> -->
+</video>
+</td>
+</tr>
+</table>
+
+<script>
+video = document.querySelector('video'),
+
+
+player = videojs(video);
+			
+$(document).ready(function(){
+$('#opacidade').css('height', $(document).height()).hide();
+$('button').click(function() {
+$('#opacidade').toggle();
+ 
+if ($('#opacidade').is(':hidden')) {
+$('button').html('Apagar a luz');
+} else {
+$('button').html('Acender a luz');
+}
+});
+});
+</script><br>
+<button id="botao">Apagar a luz</button>
+</div>
+
+<div id="opacidade"></div>
