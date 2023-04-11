@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="player.css">
+<script src="video.js"></script>
+<style>
+@font-face {
+   font-family: fonte1;
+   src: url(fonte100nome.ttf);
+}
+
+</style>
+<div id="filme" align="center">
+<table border="2" bgcolor="yellow">
+<tr>
+<td>
+<font size="5"><botao>Clique para escurecer o fundo</botao></font>
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<font color="white" size="4">Escute a radio no play abaixo</font>
+
+<table border="1" width="515" bgcolor="yellow">
+<tr>
+<td>
+<video id="example_ideo_1" class="video-js vjs-default-skin" controls width="auto" height="380" poster="https://www.dropbox.com/s/d0zzfjri0jw4afn/IMG_20230129_164232724.jpg?dl=1">
+<source src="http://stream.zeno.fm/ydtc1aazchstv" type='video/mp4;'/>
+<!-- <track kind="subtitles" srclang="pt-br" label="Pt-Br" src="026.vtt"></track> -->
+</video>
+</td>
+</tr>
+</table>
+
+<script>
+video = document.querySelector('video'),
+
+
+player = videojs(video);
+			
+$(document).ready(function(){
+$('#opacidade').css('height', $(document).height()).hide();
+$('botao').click(function() {
+$('#opacidade').toggle();
+ 
+if ($('#opacidade').is(':hidden')) {
+$('botao').html('Clique para escurecer o fundo');
+} else {
+$('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
+}
+});
+});
+</script>
+
+<br>
+<BR>
+<BR>
+<font size="5" color="cc8400">Esse site é apenas um teste para vez se os codigos funcionam, a radio verdadeira ainda esta em negociaçao e provavelmente sera em 7535Khz Am transmitindo diretamente de Lugar Nem Um para o mundo com 300W de potencia</font>
+</center><br><br>
+
+<center>
+<font size="5" color="cc8400">A radio que eta tocando é para teste e podera ficar sem som por varias horas</font>
+</center><br><br>
+
+</div>
+
+<div id="opacidade"></div>
