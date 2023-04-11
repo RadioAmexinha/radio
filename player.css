@@ -14,7 +14,7 @@
 /*Movimento do icone*/.vjs-default-skin .vjs-slider-handle{position:absolute;left:0;top:0;}
 
 /*ComfiguraÃ§oes do icone*/.vjs-default-skin .vjs-slider-handle:before{content:url(img/5.png);
-font-family:VideoJS;font-size:1em;line-height:1;text-align:center;text-shadow:0em 0em 1em blue;position:absolute;top:0;left:0;}
+font-family:VideoJS;font-size:1em;line-height:1;text-align:center;text-shadow:0em 0em 1em blue;position:absolute;top:-11;left:0;}
 
 /*PosiÃ§ao da barra de progreÃ§o*/.vjs-default-skin .vjs-control-bar{display:none;position:absolute;bottom:0;left:0;right:0;height:3.0em;background-image:url(img/9.png);}
 
@@ -63,7 +63,7 @@ font-family:VideoJS;font-size:1em;line-height:1;text-align:center;text-shadow:0e
 
 /*Cor da barra de carregamento*/.vjs-default-skin .vjs-load-progress{background-color: #FF6A00;background-color: rgba(255, 106, 0, 0.3);}
 
-/*Aparecer live ou nao*/.vjs-default-skin .vjs-live-display{display:none;font-size:1em;line-height:3em;}
+/*Aparecer live ou nao*/.vjs-default-skin .vjs-live-display{font-size:1em;line-height:3em;}
 
 /*Controle do tempo*/.vjs-default-skin .vjs-time-controls{font-size:1.3em;line-height:1.9em;font-family:tempo;}
 
@@ -73,9 +73,9 @@ font-family:VideoJS;font-size:1em;line-height:1;text-align:center;text-shadow:0e
 
 /*PosiÃ§ao icone telacheia*/.vjs-default-skin .vjs-fullscreen-control{width:3.8em;cursor:pointer;float:right;}
 
-/*Imagem da tela cheia*/.vjs-default-skin .vjs-fullscreen-control:before{content:url(img/4.png);}
+/*Imagem da tela cheia*/.vjs-default-skin .vjs-fullscreen-control:before{top:20em;content:url(img/4.png);}
 
-/*PosiÃƒÂ§ao do botao do meio/cor*/.vjs-default-skin .vjs-big-play-button{left:10em;top:5em;font-size:3em;display:block;z-index:2;position:absolute;width:4em;height:2.6em;text-align:center;vertical-align:middle;cursor:pointer;opacity:1;background-color:skyblue;background-color:skyblue;border:0.1em solid #3b4249;-webkit-border-radius:0.8em;-moz-border-radius:0.8em;border-radius:0.8em;-webkit-box-shadow:0px 0px 1em rgba(255,255,255,0.25);-moz-box-shadow:0px 0px 1em rgba(255,255,255,0.25);box-shadow:0px 0px 1em rgba(255,255,255,0.25);-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s;}
+/*PosiÃƒÂ§ao do botao do meio/cor*/.vjs-default-skin .vjs-big-play-button{left:6.5em;top:5em;font-size:3em;display:block;z-index:2;position:absolute;width:4em;height:2.6em;text-align:center;vertical-align:middle;cursor:pointer;opacity:1;background-color:skyblue;background-color:skyblue;border:0.1em solid #3b4249;-webkit-border-radius:0.8em;-moz-border-radius:0.8em;border-radius:0.8em;-webkit-box-shadow:0px 0px 1em rgba(255,255,255,0.25);-moz-box-shadow:0px 0px 1em rgba(255,255,255,0.25);box-shadow:0px 0px 1em rgba(255,255,255,0.25);-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s;}
 
 /*Botao do meio aparecer ou nao apos play*/.vjs-default-skin.vjs-has-started .vjs-big-play-button{display:none;}
 
@@ -145,4 +145,44 @@ display:block;
 z-index:999
 }
 /*Apagar luz
+--------------------------------------------------------------------------------------------------------------------------*/
+
+/*Coisas Aleatorias
+--------------------------------------------------------------------------------------------------------------------------*/
+a {
+  color: (red);
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:link {
+  color: (red);
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:visited {
+  color: green;
+}
+
+}
+
+a:active {
+  color: red;
+}
+
+body {
+  background: #183e7c url(*) no-repeat fixed top center;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  
+}
+/*Coisas Aleatorias
 --------------------------------------------------------------------------------------------------------------------------*/
