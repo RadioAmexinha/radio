@@ -1,0 +1,203 @@
+<link rel="stylesheet" href="player.css">
+<script src="video.js"></script>
+<style>
+@font-face {
+   font-family: fonte1;
+   src: url(fonte100nome.ttf);
+}
+
+</style>
+<div id="filme" align="center">
+
+<table border="2" bgcolor="yellow">
+<tr>
+<td><a href="index.html#Programacao">Programaçao da Radio</a></td>
+<td><a href="index.html#contato">Contatos</a></td>
+<td><a href="index.html#ajude">Ajude a Radio</a></td>
+<td><a href="index.html#sobre">Sobre a Radio</a></td>
+<td><a href="index.html#espe">Transmissor/Frequencia</a></td>
+<td><a href="#gastos">Gastos e Ganhos</a></td>
+</tr>
+</table>
+
+<br><br>
+
+<table border="2" bgcolor="yellow">
+<tr>
+<td>
+<font size="5"><botao>Clique para escurecer o fundo</botao></font>
+</td>
+</tr>
+</table>
+
+<br>
+<br>
+
+<font color="white" size="4">Escute a radio no play abaixo</font>
+
+<table border="1" width="515" bgcolor="yellow">
+<tr>
+<td>
+<video id="example_ideo_1" class="video-js vjs-default-skin" controls width="auto" height="380" poster="https://www.dropbox.com/s/d0zzfjri0jw4afn/IMG_20230129_164232724.jpg?dl=1">
+<source src="http://stream.zeno.fm/ydtc1aazchstv" type='video/mp4;'/>
+<!-- <track kind="subtitles" srclang="pt-br" label="Pt-Br" src="026.vtt"></track> -->
+</video>
+</td>
+</tr>
+</table>
+
+<script>
+video = document.querySelector('video'),
+
+
+player = videojs(video);
+			
+$(document).ready(function(){
+$('#opacidade').css('height', $(document).height()).hide();
+$('botao').click(function() {
+$('#opacidade').toggle();
+ 
+if ($('#opacidade').is(':hidden')) {
+$('botao').html('Clique para escurecer o fundo');
+} else {
+$('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
+}
+});
+});
+</script>
+
+<br>
+<BR>
+<BR>
+
+<div id="gastos"></div>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="orange" size="5">Saldo Disponivel&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">1500&#160;&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Gastos&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Data&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Motivo&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;Ganhos&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Data&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Doador&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">Saldo Disponivel&#160;&#160;</font>
+</td>
+<td>
+</tr>
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;270&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;S/Data&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Componentes Mesa de Som&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;1230&#160;&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;250&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;24/06/2023&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Primeira Parcela Transmissor&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;980&#160;&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Antena&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;980&#160;&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Cartao Qsl&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;980&#160;&#160;</font>
+</td>
+</tr>
+</table>
+
+</div>
+
+<div id="opacidade"></div>
