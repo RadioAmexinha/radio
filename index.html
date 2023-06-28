@@ -1,5 +1,7 @@
+<link rel="shortcut icon" href="img/5.png" type="image/x-icon" />
 <link rel="stylesheet" href="player.css">
 <script src="video.js"></script>
+<script src="scripts.js"></script>
 <style>
 @font-face {
    font-family: fonte1;
@@ -7,18 +9,43 @@
 }
 
 </style>
+
+<script language="JavaScript">
+
+var message = new Array();
+
+message[0] = "Radio";
+
+message[1] = "Amexinha";
+
+message[2] = "7670Khz";
+
+message[3] = "25w de potencia";
+
+message[4] = ".";
+
+var reps = 5;
+var speed = 30;
+var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;if (reps < 1) reps = 1;function doTheThing() {T = message[mC];A();}function A() {s++;if (s > 8) { s = 1;}if (s == 1) { document.title = ''+T+''; }if (s == 2) { document.title = ''+T+''; }if (C < (8 * reps)) {sT = setTimeout("A()", speed);C++;}else {C = 0;s = 0;mC++;if(mC > p - 1) mC = 0;sT = null;doTheThing();}}doTheThing();
+</script>
+
 <div id="filme" align="center">
 
 <div id="topo"></div>
+
 <table border="2" bgcolor="yellow">
 <tr>
-<td><a href="#Programacao">Programaçao da Radio</a></td>
-<td><a href="#contato">Contatos</a></td>
-<td><a href="#ajude">Ajude a Radio</a></td>
-<td><a href="#sobre">Sobre a Radio</a></td>
-<td><a href="#espe">Transmissor/Frequencia</a></td>
-<td><a href="gastos.html">Gastos e Ganhos</a></td>
+<td><a onclick="prog()" href="#pro"><font size="5">Programaçao e Horarios</font></a></td>
+<td><a onclick="cont()" href="#con"><font size="5">Contatos</font></a></td>
+<td><a onclick="aju()" href="#ajude"><font size="5">Faça uma Doaçao</font></a></td>
+<td><a onclick="sobr()" href="#sobre"><font size="5">Sobre a Radio</font></a></td>
+<td><a onclick="esp()" href="#espe"><font size="5">Transmissor/Frequencia</font></a></td>
+<td><a onclick="gast()" href="#gastos"><font size="5">Gastos e Ganhos</font></a></td>
 </tr>
+</table>
+
+<br><table border="2" bgcolor="yellow">
+<tr><td><font size="5">Clique na opçao acima</font></td><tr>
 </table>
 
 <br>
@@ -83,9 +110,65 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font size="5" color="cc8400">A radio que esta tocando para teste é a<a target="_blank" href="https://listen.streamon.fm/radiogpt"> RadioGPT</a> uma radio gerenciada por uma IA</font>
 </center><br><br>
 
-
+<!-- Tabela Propagaçao -->
+<div id="prop">
 <center>
-<div id="Programacao"></div>
+<img decoding="async" src="https://www.hamqsl.com/solar101pic.php" alt="Solar Terrestrial Data" border="0"><br><br>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="red" size="4">Propagaçao de Ondas Medias</font>
+</td>
+</tr>
+</table>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="white" size="4">&#160;SFI</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;60 a 120&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="4">&#160;Ruim&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;120 a 180&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="4">&#160;Moderada&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">1&#160;80 a 240&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="#039903" size="4">&#160;Boa&#160;
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;240 ou mais&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="#04FE04" size="4">&#160;Muito boa&#160;</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+
+<br><br><br><br><br>
+<!-- Fim Tabela Propagaçao -->
+
+<!-- Inicio tabela programaçao -->
+<center>
+<div id="pro">
 <font color="red" size="6">Programaçao</font><br><br>
 
 <table border="2" bgcolor="black">
@@ -743,12 +826,17 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo">Voltar ao Topo</a></font>
+<font color="red" size="4"><a onclick="ini()" href="#topo">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 
-</table><br><br>
-<div id="contato"></div>
+</table>
+</div>
+<!-- Fim tabela programaçao -->
+
+
+<!-- Inicio tabela contato -->
+<div id="con">
 <font color="red" size="6">Contato</font><br>
 
 <table border="2" bgcolor="black">
@@ -765,16 +853,19 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo">Voltar ao Topo</a></font>
+<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 
-</table><br><br>
+</table>
+</div>
+<!-- Fim tabela contato -->
 
-
-<div id="ajude"></div>
-<!-- <font color="red" size="6">Ajude a Manter a Radio no Ar</font><br>
-<font color="white" size="5">Se voce gosta radio ajude a mantela no ar com qualquer valor</font><br><br>
+<!-- Inicio tabela ajuda -->
+<div id="ajude">
+<font color="red" size="6">Ajude a Manter a Radio no Ar</font><br>
+<font color="white" size="5">Se voce gosta da radio ajude a mante-la no ar com qualquer valor</font><br>
+<font color="white" size="5">Com ajuda posso aumentar a potencia do transmissor, melhorar a qualidade e até adquirir mais transmissores para outras Frequencia</font>
 
 <table border="2" bgcolor="black">
 
@@ -783,19 +874,37 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">Pix:...</font>
 </td>
 </tr>
+<tr>
+<td>
+<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+</td>
+</tr>
 </table>
--->
+</div>
 
 </center>
+<!-- Fim tabela ajuda -->
 
-<br><br>
-
-<div id="sobre"></div>
+<!-- Inicio Sobre -->
+<div id="sobre">
+<center>
 <font color="red" size="6">Sobre a Radio</font><br>
 
-<font color="white" size="4">Sempre tive a ideia de lançar uma radio em Lugar Nem Um ja que tinha apenas 1 em fm e nao tinha musicas muito boas e por ser uma cidade meio isolada as radios visinhas nao chegam com tanta qualiade. Com o fechamento dessa unica radio da cidade foi a chance que eu tive para abrir a minha.<br>A ideia original era montar em fm ja que se vende transmissores facilmente na net e nao sao tao caros, com as minhas pesquisas vi que nao vale a pena investir em radio fm pois precisa de muita potencia para se transmitir no maximo 200km e como os que vendem na internet sao de no maximo 30w eu nao iria consseguir cobrir nem 50Km<br>A ideia depois mudou para uma radio am em ondas medias pra cobrir uma distancia maior e transmissores de ondas medias tambem nao sao tao dificeis de se achar porem sao caros e precisam de antenas muito grandes e com minha pesquisas e testes percebi que a eficiencia tamem nao compenssa muito sendo +- 1Kv pra 100Km durante o dia e 1Kv pra 1000Km durante a noite em media<br>Pesquisei mais e vi que apesar de dificil de se achar a melhor opçao seria um transmissor em ondas curtas ja que eles sao em media mais de 1Km por W durante o dia e bem mais durante a noite, a ideia inicial que tive foi comprar um radio amador e modificar para tranmitir musica mais o que eu comprei baratinho nao funciono bem e nem funcionou, a segunda opçao que tive foi montar meu propio transmissor porem nao sou tao experiente e conssegui apenas uns 200Mw transmitindo assim para todo o quarterao, agora estou negociando um transmissor de am em ondas curtas feito por encomenda com 300 ou 500w <br> Infelizmente nao deu certo a negociaçao com essa pessoa e tive que mudar para outro vendedor que esta construindo um com 25w de potencia, nao é muito mais ja é um comesso.</font>
-<br><BR><br><BR>
-<div id="espe"></div>
+<font color="white" size="4">Depois faço melhor<br>bla<br>bla<br>bla</font>
+<br><br>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+<!-- Fim sobre -->
+
+<!-- Inicio tabela especificaçoes -->
+<div id="espe">
 <center>
 <font color="red" size="6">Transmissor</font><br><br>
 <table border="2" bgcolor="black">
@@ -806,6 +915,17 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </td>
 <td>
 <font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;????</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="#4FFF30" size="5">Fabricante</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;Anonimo</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;PB</font>
 </td>
 </tr>
 <tr>
@@ -837,7 +957,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">Frequencia 1</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;???</font>
+<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;7675Khz</font>
 </td>
 <td>
 <font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;40M</font>
@@ -845,16 +965,248 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo">Voltar ao Topo</a></font>
+<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 </table>
 </center>
-<BR><BR><BR><BR>
+</div>
+<!-- Fim tabela especificaçoes -->
 
+<!-- Inicio Tabela Gastos -->
+<div id="gastos">
+<center>
+<font color="red" size="6">Tabela</font><br>
+<table border="2" bgcolor="black">
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Gastos&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Data&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Motivo&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;Ganhos&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Data&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Doador&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Cidade&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">Saldo Disponivel&#160;&#160;</font>
+</td>
+<td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;270&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;S/Data&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Componentes Mesa de Som&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="5">&#160;&#160;-270&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;250&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;24/06/2023&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Primeira Parcela Transmissor&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="5">&#160;&#160;-520&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;61,26&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;24/06/2023&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Melhora da Mesa de Som&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="5">&#160;&#160;-581,26&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;39,43&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;25/06/2023&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Microfone&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="5">&#160;&#160;-620,69&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;50,19&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;25/06/2023&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Antena&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="5">&#160;&#160;-670,88&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;27/06/2023&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Fonte do Transmissor&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;Fonte de Pc&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;27/06/2023&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="5">&#160;&#160;-670,88&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;???&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Cartao Qsl&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="5">&#160;&#160;-670,88&#160;&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+</td>
+</tr>
+</table>
 </center>
-<br><br><br>
-<font color="red" size="6"><a href="#topo">Voltar ao Topo</a></font><br>
+</div>
+<!-- Fim Tabela Gastos -->
+
+</div>
+
 <br>
 <br>
 <br>
@@ -889,5 +1241,5 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <br>
 <br>
 <br>
-<h1>fim</h1>
+<fim><h1>fim</h1></fim>
 </div>

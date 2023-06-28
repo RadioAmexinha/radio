@@ -186,3 +186,36 @@ table, th, td {
 }
 /*Coisas Aleatorias
 --------------------------------------------------------------------------------------------------------------------------*/
+
+/*Sistema Aparecer/Sumir
+--------------------------------------------------------------------------------------------------------------------------*/
+
+#pro {
+	visibility:hidden;
+	position:absolute;
+}
+
+#con{
+	visibility:hidden;
+	position:absolute;
+}
+
+#ajude{
+	visibility:hidden;
+	position:absolute;
+}
+#sobre{
+	visibility:hidden;
+	position:absolute;
+}
+#espe{
+	visibility:hidden;
+	position:absolute;
+}
+#gastos{
+	visibility:hidden;
+	position:absolute;
+}
+fim{
+	visibility:hidden;
+}
