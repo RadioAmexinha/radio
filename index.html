@@ -1,5 +1,6 @@
 <link rel="shortcut icon" href="img/5.png" type="image/x-icon" />
 <link rel="stylesheet" href="player.css">
+<link rel="stylesheet" href="css.css">
 <script src="video.js"></script>
 <script src="scripts.js"></script>
 <style>
@@ -35,12 +36,20 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 
 <table border="2" bgcolor="yellow">
 <tr>
-<td><a onclick="prog()" href="#pro"><font size="5">Programaçao e Horarios</font></a></td>
-<td><a onclick="cont()" href="#con"><font size="5">Contatos</font></a></td>
-<td><a onclick="aju()" href="#ajude"><font size="5">Faça uma Doaçao</font></a></td>
-<td><a onclick="sobr()" href="#sobre"><font size="5">Sobre a Radio</font></a></td>
-<td><a onclick="esp()" href="#espe"><font size="5">Transmissor/Frequencia</font></a></td>
-<td><a onclick="gast()" href="#gastos"><font size="5">Gastos e Ganhos</font></a></td>
+<td data-tooltip="Veja os programas e horario de transmissao"><a onclick="prog()" href="#pro"><font size="5">Programaçao e Horarios</font></a></td>
+
+<td data-tooltip="Veja as formas de me contatar"><a onclick="cont()" href="#con"><font size="5">Contatos</font></a></td>
+
+<td data-tooltip="Veja como ajudar a radio"><a onclick="aju()" href="#ajude"><font size="5">Faça uma Doaçao</font></a></td>
+
+<td data-tooltip="Informaçoes sobre a radio"><a onclick="sobr()" href="#sobre"><font size="5">Sobre a Radio</font></a></td>
+
+<td data-tooltip="Informaçoes tecnicas sobre a radio"><a onclick="esp()" href="#espe"><font size="5">Transmissor/Frequencia</font></a></td>
+
+<td data-tooltip="Veja quem fez doaçao e como foi gasto o dinheiro"><a onclick="gast()" href="#gastos"><font size="5">Gastos e Ganhos</font></a></td>
+
+<td data-tooltip="Canal do Youtube, abrira em uma nova aba"><a target="_blank" href="https://www.youtube.com/@RadioAmeixinha"><img height="30" width="35" src="img/yt.png"></a></td>
+
 </tr>
 </table>
 
@@ -52,9 +61,9 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 <br>
 <br>
 
-<table border="2" bgcolor="yellow">
+<table id="cur" border="2" bgcolor="yellow">
 <tr>
-<td>
+<td data-tooltip="Escureça o fundo para destacar as palavras">
 <font size="5"><botao>Clique para escurecer o fundo</botao></font>
 </td>
 </tr>
@@ -68,7 +77,7 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 <table border="1" width="515" bgcolor="yellow">
 <tr>
 <td>
-<video id="example_ideo_1" class="video-js vjs-default-skin" controls width="auto" height="380" poster="https://www.dropbox.com/s/d0zzfjri0jw4afn/IMG_20230129_164232724.jpg?dl=1">
+<video class="vidcss vidcss1" controls width="auto" height="380" poster="https://www.dropbox.com/s/d0zzfjri0jw4afn/IMG_20230129_164232724.jpg?dl=1">
 <source src="https://ais-sa1.streamon.fm/7838_128k.aac" type='video/mp4;'/>
 <!-- <track kind="subtitles" srclang="pt-br" label="Pt-Br" src="026.vtt"></track> -->
 </video>
@@ -103,11 +112,11 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <div id="filme">
 
 <center>
-<font size="5" color="cc8400">Esse site é apenas um teste para vez se os codigos funcionam, o transmissor da radio esta em construçao e provavelmente mes que vez esta pronto com 25w de potencia</font>
+<font size="5" color="cc8400">O transmissor da radio esta em construçao e provavelmente mes que vez esta pronto com 25w de potencia</font>
 </center><br><br>
 
 <center>
-<font size="5" color="cc8400">A radio que esta tocando para teste é a<a target="_blank" href="https://listen.streamon.fm/radiogpt"> RadioGPT</a> uma radio gerenciada por uma IA</font>
+<font size="5" color="cc8400">A radio que esta tocando para teste é a<a target="_blank" href="https://listen.streamon.fm/radiogpt" data-tooltip="Uma nova aba sera aberta ao clicar"> RadioGPT</a> uma radio gerenciada por uma IA</font>
 </center><br><br>
 
 <!-- Tabela Propagaçao -->
@@ -826,7 +835,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a onclick="ini()" href="#topo">Fechar e Voltar ao Topo</a></font>
+<font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a onclick="ini()" href="#topo">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 
@@ -853,7 +862,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+<font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 
@@ -876,7 +885,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+<font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 </table>
@@ -895,7 +904,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <table border="2" bgcolor="black">
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+<font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 </table>
@@ -965,7 +974,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+<font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 </table>
@@ -1197,7 +1206,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="red" size="4"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+<font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
 </tr>
 </table>

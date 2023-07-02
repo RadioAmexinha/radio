@@ -7,215 +7,102 @@
    font-family: tempo;
    src: url(https://fonts.gstatic.com/s/audiowide/v4/8XtYtNKEyyZh481XVWfVOltXRa8TVwTICgirnJhmVJw.woff2);}
 
-/*Cor da letra botao Play*/.vjs-default-skin{color:red;}
+/*Cor da letra botao Play*/.vidcss1{color:red;}
 
-/*ConfiguraÃ§oes volume/corprogress bar*/.vjs-default-skin .vjs-slider{outline:0;position:relative;cursor:pointer;padding:0;background-color:red;background-image:url(img/8.png);}
+/*ConfiguraÃ§oes volume/corprogress bar*/.vidcss1 .vidcss3{outline:0;position:relative;cursor:pointer;padding:0;background-color:red;background-image:url(img/8.png);}
 
-/*Movimento do icone*/.vjs-default-skin .vjs-slider-handle{position:absolute;left:0;top:0;}
+/*Movimento do icone*/.vidcss1 .vidcss2{position:absolute;left:0;top:0;}
 
-/*ComfiguraÃ§oes do icone*/.vjs-default-skin .vjs-slider-handle:before{content:url(img/5.png);
+/*ComfiguraÃ§oes do icone*/.vidcss1 .vidcss2:before{content:url(img/5.png);
 font-family:VideoJS;font-size:1em;line-height:1;text-align:center;text-shadow:0em 0em 1em blue;position:absolute;top:-11;left:0;}
 
-/*PosiÃ§ao da barra de progreÃ§o*/.vjs-default-skin .vjs-control-bar{display:none;position:absolute;bottom:0;left:0;right:0;height:3.0em;background-image:url(img/9.png);}
+/*PosiÃ§ao da barra de progreÃ§o*/.vidcss1 .vidcss4{display:none;position:absolute;bottom:0;left:0;right:0;height:3.0em;background-image:url(img/9.png);}
 
-/*Visibilidade barra de progreÃ§o*/.vjs-default-skin.vjs-has-started .vjs-control-bar{display:block;visibility:visible;opacity:1;-webkit-transition:visibility 0.1s,opacity 0.1s;-moz-transition:visibility 0.1s,opacity 0.1s;-o-transition:visibility 0.1s,opacity 0.1s;transition:visibility 0.1s,opacity 0.1s;}
+/*Visibilidade barra de progreÃ§o*/.vidcss1.vidcss5 .vidcss4{display:block;visibility:visible;opacity:1;-webkit-transition:visibility 0.1s,opacity 0.1s;-moz-transition:visibility 0.1s,opacity 0.1s;-o-transition:visibility 0.1s,opacity 0.1s;transition:visibility 0.1s,opacity 0.1s;}
 
-/*Visibilidade barra de progreÃ§o*/.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar{display:block;visibility:hidden;opacity:0;-webkit-transition:visibility 1s,opacity 1s;-moz-transition:visibility 1s,opacity 1s;-o-transition:visibility 1s,opacity 1s;transition:visibility 1s,opacity 1s;}
+/*Visibilidade barra de progreÃ§o*/.vidcss1.vidcss5.vidcss6.vidcss7 .vidcss4{display:block;visibility:hidden;opacity:0;-webkit-transition:visibility 1s,opacity 1s;-moz-transition:visibility 1s,opacity 1s;-o-transition:visibility 1s,opacity 1s;transition:visibility 1s,opacity 1s;}
 
-/*PosiÃ§ao dos icones da barra*/.vjs-default-skin .vjs-control{outline:none;position:relative;float:left;text-align:center;margin:0;padding:0;height:3.0em;width:4em;top:0.3em;}
-
-
-/*PosiÃ§ao do texto da barra de progreÃ§o*/.vjs-default-skin .vjs-control-text{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
-
-/*Distancia entre play/pause e contador*/.vjs-default-skin .vjs-play-control{width:5em;cursor:pointer;}
-
-/*Imagem play*/.vjs-default-skin .vjs-play-control:before{content:url(img/6.png);}
-
-/*Imagem pause*/.vjs-default-skin.vjs-playing .vjs-play-control:before{content:url(img/7.png);}
-
-/*PosiÃ§ao do volume/cursor*/.vjs-default-skin .vjs-mute-control,.vjs-default-skin .vjs-volume-menu-button{cursor:pointer;float:right;}
-
-/*Imagem volume full*/.vjs-default-skin .vjs-mute-control:before,.vjs-default-skin .vjs-volume-menu-button:before{content:url(img/v1.png);}
-
-/*Imagem volume mudo*/.vjs-default-skin .vjs-mute-control.vjs-vol-0:before,.vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before{content:url(img/v4.png);}
-
-/*Imagem volume 10%*/.vjs-default-skin .vjs-mute-control.vjs-vol-1:before,.vjs-default-skin .vjs-volume-menu-button.vjs-vol-1:before{content:url(img/v2.png);}
-
-/*Imagem volume 50%*/.vjs-default-skin .vjs-mute-control.vjs-vol-2:before,.vjs-default-skin .vjs-volume-menu-button.vjs-vol-2:before{content:url(img/v3.png);}
-
-/*Distancia entre volume*/.vjs-default-skin .vjs-volume-control{width:7em;float:right;}
-
-/*Tamanho da barra de volume*/.vjs-default-skin .vjs-volume-bar{width:5em;height:0.6em;margin:1.1em auto 0;}
-
-/*Imagem da barra de volume*/.vjs-default-skin .vjs-volume-level{position:absolute;top:0;left:0;height:0.5em;width:100%;background:deepskyblue url(img/3.png) -50% 0 repeat;}
-
-/*Posicao do icone volume*/.vjs-default-skin .vjs-volume-bar .vjs-volume-handle{width:0.5em;height:0.5em;left:4.5em;}
-
-/*Visibilidade da barra de progreÃ§o*/.vjs-default-skin .vjs-progress-control{position:absolute;left:0;right:0;width:auto;font-size:0.3em;height:1em;top:-1em;-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s;cursor:crosshair;}
-
-/*Efeito barar de progreÃ§o*/.vjs-default-skin:hover .vjs-progress-control{font-size:.9em;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;}
-
-/*Tamando barra de progreÃ§o*/.vjs-default-skin .vjs-progress-holder{height:100%;}
-
-/*PosiÃ§ao de onde mostrar o progreÃ§o*/.vjs-default-skin .vjs-progress-holder .vjs-play-progress,.vjs-default-skin .vjs-progress-holder .vjs-load-progress{position:absolute;display:block;height:100%;margin:0;padding:0;width:0;left:0;top:0;}
-
-/*Imagem barra de progreÃ§o*/.vjs-default-skin .vjs-play-progress{background:darkgreen url(img/1.png) -50% 0 repeat;}
-
-/*Cor da barra de carregamento*/.vjs-default-skin .vjs-load-progress{background-color: #FF6A00;background-color: rgba(255, 106, 0, 0.3);}
-
-/*Aparecer live ou nao*/.vjs-default-skin .vjs-live-display{font-size:1em;line-height:3em;}
-
-/*Controle do tempo*/.vjs-default-skin .vjs-time-controls{font-size:1.3em;line-height:1.9em;font-family:tempo;}
-
-/*Mostrar ou nao tempo que falta*/.vjs-default-skin .vjs-remaining-time{display:none;float:left;}
-
-/*Posicao da barrinha*/.vjs-time-divider{float:left;line-height:1.6em;font-size:2em}
-
-/*PosiÃ§ao icone telacheia*/.vjs-default-skin .vjs-fullscreen-control{width:3.8em;cursor:pointer;float:right;}
-
-/*Imagem da tela cheia*/.vjs-default-skin .vjs-fullscreen-control:before{top:20em;content:url(img/4.png);}
-
-/*PosiÃƒÂ§ao do botao do meio/cor*/.vjs-default-skin .vjs-big-play-button{left:6.5em;top:5em;font-size:3em;display:block;z-index:2;position:absolute;width:4em;height:2.6em;text-align:center;vertical-align:middle;cursor:pointer;opacity:1;background-color:skyblue;background-color:skyblue;border:0.1em solid #3b4249;-webkit-border-radius:0.8em;-moz-border-radius:0.8em;border-radius:0.8em;-webkit-box-shadow:0px 0px 1em rgba(255,255,255,0.25);-moz-box-shadow:0px 0px 1em rgba(255,255,255,0.25);box-shadow:0px 0px 1em rgba(255,255,255,0.25);-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s;}
-
-/*Botao do meio aparecer ou nao apos play*/.vjs-default-skin.vjs-has-started .vjs-big-play-button{display:none;}
-
-/*Balao do botao do meio*/.vjs-default-skin:hover .vjs-big-play-button,.vjs-default-skin .vjs-big-play-button:focus{outline:0;border-color:#fff;background-color:deepskyblue;background-color:#FE2E2E;-webkit-box-shadow:0 0 3em #ffffff;-moz-box-shadow:0 0 3em #ffffff;box-shadow:0 0 3em #ffffff;-webkit-transition:all 0s;-moz-transition:all 0s;-o-transition:all 0s;transition:all 0s;}
-
-/*Texto do botao do meio*/.vjs-default-skin .vjs-big-play-button:before{content:"Play";font-family:lobster;line-height:2.6em;text-shadow:0.05em 0.05em 0.1em #000;text-align:center;position:absolute;left:0;width:100%;height:100%;}
-
-/*Play central aparecer mesmo que der erro*/.vjs-error .vjs-big-play-button{display:block;}
-
-/*????*/.vjs-error-display{display:none;}
-
-/*PosiÃ§ao da menssagem de erro (todos)*/.vjs-error .vjs-error-display{display:block;position:absolute;left:19.5;top:5;width:100%;height:100%;font-family:lobster;color:white;}
-
-/*PosiÃ§ao da menssagem de erro (grande)*/.vjs-error .vjs-error-display:before{content:'Error 404';font-family:Arial;font-size:4em;color:#0000FF;line-height:1;text-shadow:0.05em 0.05em 0.1em #000;text-align:center;vertical-align:middle;position:absolute;top:50%;margin-top:-0.5em;width:100%;}
-
-/*PosiÃ§ao da menssagem de erro (pequenae)*/.vjs-error-display div{position:absolute;font-size:1.4em;text-align:center;bottom:1em;right:1em;left:2em;}
-
-/*Posicionameto da imagem de carregando*/.vjs-loading-spinner{display:none;position:absolute;top:50%;left:50%;font-size:4em;line-height:1;width:1em;height:1em;margin-left:-0.5em;margin-top:-0.5em;opacity:0.75;-webkit-animation:spin 1.5s infinite linear;-moz-animation:spin 1.5s infinite linear;-o-animation:spin 1.5s infinite linear;animation:spin 1.5s infinite linear;}
+/*PosiÃ§ao dos icones da barra*/.vidcss1 .vidcss8{outline:none;position:relative;float:left;text-align:center;margin:0;padding:0;height:3.0em;width:4em;top:0.3em;}
 
 
-/*PosiÃ§ao da imagem de carregar*/.vjs-default-skin .vjs-loading-spinner:before{content:url(img/1.gif);font-family:VideoJS;position:absolute;top:5;left:10;width:1em;height:1em;text-align:center;text-shadow:0em 0em 0.1em #000;}
+/*PosiÃ§ao do texto da barra de progreÃ§o*/.vidcss1 .vidcss9{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+
+/*Distancia entre play/pause e contador*/.vidcss1 .vidcss10{width:5em;cursor:pointer;}
+
+/*Imagem play*/.vidcss1 .vidcss10:before{content:url(img/6.png);}
+
+/*Imagem pause*/.vidcss1.vidcss7 .vidcss10:before{content:url(img/7.png);}
+
+/*PosiÃ§ao do volume/cursor*/.vidcss1 .vidcss11,.vidcss1 .vidcss12{cursor:pointer;float:right;}
+
+/*Imagem volume full*/.vidcss1 .vidcss11:before,.vidcss1 .vidcss12:before{content:url(img/v1.png);}
+
+/*Imagem volume mudo*/.vidcss1 .vidcss11.vidcss13-0:before,.vidcss1 .vidcss12.vidcss13-0:before{content:url(img/v4.png);}
+
+/*Imagem volume 10%*/.vidcss1 .vidcss11.vidcss13-1:before,.vidcss1 .vidcss12.vidcss13-1:before{content:url(img/v2.png);}
+
+/*Imagem volume 50%*/.vidcss1 .vidcss11.vidcss13-2:before,.vidcss1 .vidcss12.vidcss13-2:before{content:url(img/v3.png);}
+
+/*Distancia entre volume*/.vidcss1 .vidcss14{width:7em;float:right;}
+
+/*Tamanho da barra de volume*/.vidcss1 .vidcss15{width:5em;height:0.6em;margin:1.1em auto 0;}
+
+/*Imagem da barra de volume*/.vidcss1 .vidcss16{position:absolute;top:0;left:0;height:0.5em;width:100%;background:deepskyblue url(img/3.png) -50% 0 repeat;}
+
+/*Posicao do icone volume*/.vidcss1 .vidcss15 .vidcss17{width:0.5em;height:0.5em;left:4.5em;}
+
+/*Visibilidade da barra de progreÃ§o*/.vidcss1 .vidcss18{position:absolute;left:0;right:0;width:auto;font-size:0.3em;height:1em;top:-1em;-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s;cursor:crosshair;}
+
+/*Efeito barar de progreÃ§o*/.vidcss1:hover .vidcss18{font-size:.9em;-webkit-transition:all 0.2s;-moz-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;}
+
+/*Tamando barra de progreÃ§o*/.vidcss1 .vidcss19{height:100%;}
+
+/*PosiÃ§ao de onde mostrar o progreÃ§o*/.vidcss1 .vidcss19 .vidcss21,.vidcss1 .vidcss19 .vidcss20{position:absolute;display:block;height:100%;margin:0;padding:0;width:0;left:0;top:0;}
+
+/*Imagem barra de progreÃ§o*/.vidcss1 .vidcss21{background:darkgreen url(img/1.png) -50% 0 repeat;}
+
+/*Cor da barra de carregamento*/.vidcss1 .vidcss20{background-color: #FF6A00;background-color: rgba(255, 106, 0, 0.3);}
+
+/*Aparecer live ou nao*/.vidcss1 .LiveOn{font-size:1em;line-height:3em;}
+
+/*Controle do tempo*/.vidcss1 .vidcss22{font-size:1.3em;line-height:1.9em;font-family:tempo;}
+
+/*Mostrar ou nao tempo que falta*/.vidcss1 .vidcss23{display:none;float:left;}
+
+/*Posicao da barrinha*/.vidcss24{float:left;line-height:1.6em;font-size:2em}
+
+/*PosiÃ§ao icone telacheia*/.vidcss1 .vidcss25{width:3.8em;cursor:pointer;float:right;}
+
+/*Imagem da tela cheia*/.vidcss1 .vidcss25:before{top:20em;content:url(img/4.png);}
+
+/*PosiÃƒÂ§ao do botao do meio/cor*/.vidcss1 .vidcss26{left:6.5em;top:5em;font-size:3em;display:block;z-index:2;position:absolute;width:4em;height:2.6em;text-align:center;vertical-align:middle;cursor:pointer;opacity:1;background-color:skyblue;background-color:skyblue;border:0.1em solid #3b4249;-webkit-border-radius:0.8em;-moz-border-radius:0.8em;border-radius:0.8em;-webkit-box-shadow:0px 0px 1em rgba(255,255,255,0.25);-moz-box-shadow:0px 0px 1em rgba(255,255,255,0.25);box-shadow:0px 0px 1em rgba(255,255,255,0.25);-webkit-transition:all 0.4s;-moz-transition:all 0.4s;-o-transition:all 0.4s;transition:all 0.4s;}
+
+/*Botao do meio aparecer ou nao apos play*/.vidcss1.vidcss5 .vidcss26{display:none;}
+
+/*Balao do botao do meio*/.vidcss1:hover .vidcss26,.vidcss1 .vidcss26:focus{outline:0;border-color:#fff;background-color:deepskyblue;background-color:#FE2E2E;-webkit-box-shadow:0 0 3em #ffffff;-moz-box-shadow:0 0 3em #ffffff;box-shadow:0 0 3em #ffffff;-webkit-transition:all 0s;-moz-transition:all 0s;-o-transition:all 0s;transition:all 0s;}
+
+/*Texto do botao do meio*/.vidcss1 .vidcss26:before{content:"Play";font-family:lobster;line-height:2.6em;text-shadow:0.05em 0.05em 0.1em #000;text-align:center;position:absolute;left:0;width:100%;height:100%;}
+
+/*Play central aparecer mesmo que der erro*/.vidcss28 .vidcss26{display:block;}
+
+/*????*/.vidcss27{display:none;}
+
+/*PosiÃ§ao da menssagem de erro (todos)*/.vidcss28 .vidcss27{display:block;position:absolute;left:19.5;top:5;width:100%;height:100%;font-family:lobster;color:white;}
+
+/*PosiÃ§ao da menssagem de erro (grande)*/.vidcss28 .vidcss27:before{content:'Error 404';font-family:Arial;font-size:4em;color:#0000FF;line-height:1;text-shadow:0.05em 0.05em 0.1em #000;text-align:center;vertical-align:middle;position:absolute;top:50%;margin-top:-0.5em;width:100%;}
+
+/*PosiÃ§ao da menssagem de erro (pequenae)*/.vidcss27 div{position:absolute;font-size:1.4em;text-align:center;bottom:1em;right:1em;left:2em;}
+
+/*Posicionameto da imagem de carregando*/.vidcss29{display:none;position:absolute;top:50%;left:50%;font-size:4em;line-height:1;width:1em;height:1em;margin-left:-0.5em;margin-top:-0.5em;opacity:0.75;-webkit-animation:spin 1.5s infinite linear;-moz-animation:spin 1.5s infinite linear;-o-animation:spin 1.5s infinite linear;animation:spin 1.5s infinite linear;}
 
 
-/*Propiedade do video*/.video-js{background-color:black;position:relative;padding:0;font-size:10px;vertical-align:middle;font-weight:normal;font-style:normal;font-family:Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+/*PosiÃ§ao da imagem de carregar*/.vidcss1 .vidcss29:before{content:url(img/1.gif);font-family:VideoJS;position:absolute;top:5;left:10;width:1em;height:1em;text-align:center;text-shadow:0em 0em 0.1em #000;}
 
-/*Tamanho do video*/.video-js .vjs-tech{position:absolute;top:0;left:0;width:100%;height:100%;}
 
-/*Propiedades da imagem de fundo*/.vjs-poster{background-repeat:no-repeat;background-position:50% 50%;background-size:contain;cursor:pointer;height:100%;margin:0;padding:0;position:relative;width:100%;}
+/*Propiedade do video*/.vidcss{background-color:black;position:relative;padding:0;font-size:10px;vertical-align:middle;font-weight:normal;font-style:normal;font-family:Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 
-/*Disbilita coisinha estranha*/.vjs-default-skin .vjs-hidden{display:none;}
+/*Tamanho do video*/.vidcss .vidcss32{position:absolute;top:0;left:0;width:100%;height:100%;}
 
-/*Apagar luz
---------------------------------------------------------------------------------------------------------------------------*/
-#botao{
-	background-color:#666666;
-	color:#FFFFFF;
-	cursor:pointer;
-	width:250px;
-	position:relative;
-	display:block;
-	z-index:999
-}
- 
-#filme{
-	margin:0 auto;
+/*Propiedades da imagem de fundo*/.vidcss30{background-repeat:no-repeat;background-position:50% 50%;background-size:contain;cursor:pointer;height:100%;margin:0;padding:0;position:relative;width:100%;}
 
-	padding:0;
-	position:relative;
-	display:block;
-	z-index:999
-}    
- 
-#opacidade {
-	position:fixed;
-	top:0; right:0; bottom:0; left:0;
-	margin:0; padding:0;
-	background:#000;
-	opacity:.80;
-	filter: alpha(opacity=80);
-	-moz-opacity: 0.80;
-	z-index: 1;
-}
-#filme{
-
-position:relative;
-display:block;
-z-index:999
-}
-/*Apagar luz
---------------------------------------------------------------------------------------------------------------------------*/
-
-/*Coisas Aleatorias
---------------------------------------------------------------------------------------------------------------------------*/
-a {
-  color: (red);
-  text-decoration: none;
-  cursor: auto;
-}
-
-a:hover {
-  color: hotpink;
-}
-
-a:link {
-  color: (red);
-  text-decoration: none;
-  cursor: auto;
-}
-
-a:visited {
-  color: green;
-}
-
-}
-
-a:active {
-  color: red;
-}
-
-body {
-  background: #183e7c url(*) no-repeat fixed top center;
-}
-
-table, th, td {
-  border: 2px solid black;
-  border-collapse: collapse;
-  
-}
-/*Coisas Aleatorias
---------------------------------------------------------------------------------------------------------------------------*/
-
-/*Sistema Aparecer/Sumir
---------------------------------------------------------------------------------------------------------------------------*/
-
-#pro {
-	visibility:hidden;
-	position:absolute;
-}
-
-#con{
-	visibility:hidden;
-	position:absolute;
-}
-
-#ajude{
-	visibility:hidden;
-	position:absolute;
-}
-#sobre{
-	visibility:hidden;
-	position:absolute;
-}
-#espe{
-	visibility:hidden;
-	position:absolute;
-}
-#gastos{
-	visibility:hidden;
-	position:absolute;
-}
-fim{
-	visibility:hidden;
-}
+/*Disbilita coisinha estranha*/.vidcss1 .vidcss31{display:none;}

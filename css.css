@@ -1,0 +1,148 @@
+/*Apagar luz
+--------------------------------------------------------------------------------------------------------------------------*/
+#botao{
+	background-color:#666666;
+	color:#FFFFFF;
+	cursor:pointer;
+	width:250px;
+	position:relative;
+	display:block;
+	z-index:999;
+}
+ 
+#filme{
+	margin:0 auto;
+
+	padding:0;
+	position:relative;
+	display:block;
+	z-index:999
+}    
+ 
+#opacidade {
+	position:fixed;
+	top:0; right:0; bottom:0; left:0;
+	margin:0; padding:0;
+	background:#000;
+	opacity:.80;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.80;
+	z-index: 1;
+}
+#filme{
+
+position:relative;
+display:block;
+z-index:999
+}
+/*Apagar luz
+--------------------------------------------------------------------------------------------------------------------------*/
+
+/*Coisas Aleatorias
+--------------------------------------------------------------------------------------------------------------------------*/
+a {
+  color: (red);
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a:hover {
+  color: hotpink;
+  cursor:pointer;
+}
+
+a:link {
+  color: (red);
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a:visited {
+  color: green;
+  cursor:pointer;
+}
+
+}
+
+a:active {
+  color: red;
+  cursor:pointer;
+}
+
+body {
+  background: #183e7c url(*) no-repeat fixed top center;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  
+}
+
+#cur{
+	cursor:pointer;
+}
+/*Coisas Aleatorias
+--------------------------------------------------------------------------------------------------------------------------*/
+
+/*Sistema Aparecer/Sumir
+--------------------------------------------------------------------------------------------------------------------------*/
+
+#pro {
+	visibility:hidden;
+	position:absolute;
+}
+
+#con{
+	visibility:hidden;
+	position:absolute;
+}
+
+#ajude{
+	visibility:hidden;
+	position:absolute;
+}
+#sobre{
+	visibility:hidden;
+	position:absolute;
+}
+#espe{
+	visibility:hidden;
+	position:absolute;
+}
+#gastos{
+	visibility:hidden;
+	position:absolute;
+}
+fim{
+	visibility:hidden;
+}
+/*Sistema Aparecer/Sumir
+--------------------------------------------------------------------------------------------------------------------------*/
+
+/*Menssagem links
+--------------------------------------------------------------------------------------------------------------------------*/
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:after {
+  display: none;
+  position: absolute;
+  top: -5px;
+  padding: 5px;
+  border-radius: 3px;
+  top: calc(100% + 4px);
+  content: attr(data-tooltip);
+  white-space: nowrap;
+  background-color: #0095ff;
+  color: White;
+}
+
+[data-tooltip]:hover:after {
+  display: block;
+}
+
+/*Menssagem links
+--------------------------------------------------------------------------------------------------------------------------*/
