@@ -38,7 +38,7 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 <tr>
 <td data-tooltip="Veja os programas e horario de transmissao"><a onclick="prog()" href="#pro"><font size="5">Programaçao e Horarios</font></a></td>
 
-<td data-tooltip="Veja as formas de me contatar"><a onclick="cont()" href="#con"><font size="5">Contatos</font></a></td>
+<td data-tooltip="Veja as formas de entrar em contao"><a onclick="cont()" href="#con"><font size="5">Contatos</font></a></td>
 
 <td data-tooltip="Veja como ajudar a radio"><a onclick="aju()" href="#ajude"><font size="5">Faça uma Doaçao</font></a></td>
 
@@ -46,9 +46,9 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 
 <td data-tooltip="Informaçoes tecnicas sobre a radio"><a onclick="esp()" href="#espe"><font size="5">Transmissor/Frequencia</font></a></td>
 
-<td data-tooltip="Veja quem fez doaçao e como foi gasto o dinheiro"><a onclick="gast()" href="#gastos"><font size="5">Gastos e Ganhos</font></a></td>
+<td data-tooltip="Veja quem foram os doadores"><a onclick="gast()" href="#gastos"><font size="5">Doadores</font></a></td>
 
-<td data-tooltip="Canal do Youtube, abrira em uma nova aba"><a target="_blank" href="https://www.youtube.com/@RadioAmeixinha"><img height="30" width="35" src="img/Yt.png"></a></td>
+<td data-tooltip="Canal do Youtube, abrira em uma nova aba"><a target="_blank" href="https://www.youtube.com/@RadioAmeixinha"><img height="30" width="35" src="img/yt.png"></a></td>
 
 </tr>
 </table>
@@ -154,7 +154,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="white" size="4">1&#160;80 a 240&#160;&#160;&#160;&#160;</font>
+<font color="white" size="4">&#160;180 a 240&#160;&#160;&#160;&#160;</font>
 </td>
 <td>
 <font color="#039903" size="4">&#160;Boa&#160;
@@ -857,7 +857,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </tr>
 <tr>
 <td>
-<font color="#4FFF30" size="5">Whatsapp: 555023549</font>
+<font color="#4FFF30" size="5">Whatsapp: (18)99817-4897</font>
 </td>
 </tr>
 <tr>
@@ -880,7 +880,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 
 <tr>
 <td>
-<font color="#4FFF30" size="5">Pix:...</font>
+<font color="#4FFF30" size="5">Pix: 18998174897</font>
 </td>
 </tr>
 <tr>
@@ -899,7 +899,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <center>
 <font color="red" size="6">Sobre a Radio</font><br>
 
-<font color="white" size="4">Depois faço melhor<br>bla<br>bla<br>bla</font>
+<font color="white" size="4">Esta radio pretende manter viva as ondas curtas no brasil</font>
 <br><br>
 <table border="2" bgcolor="black">
 <tr>
@@ -931,10 +931,10 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">Fabricante</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;Anonimo</font>
+<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;???</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;PB</font>
+<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;SP</font>
 </td>
 </tr>
 <tr>
@@ -942,7 +942,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">Potencia</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;25W</font>
+<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;100W</font>
 </td>
 </tr>
 <tr>
@@ -966,7 +966,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">Frequencia 1</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;7675Khz</font>
+<font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;7680Khz</font>
 </td>
 <td>
 <font color="#4FFF30" size="5">&#160;&#160;&#160;&#160;40M</font>
@@ -985,170 +985,26 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <!-- Inicio Tabela Gastos -->
 <div id="gastos">
 <center>
-<font color="red" size="6">Tabela</font><br>
+<font color="red" size="6">Tabela de doaçoes</font><br>
 <table border="2" bgcolor="black">
 
 <tr>
 <td>
-<font color="red" size="5">&#160;&#160;Gastos&#160;&#160;</font>
+<font color="red" size="5">&#160;&#160;Data&#160;&#160;</font>
 </td>
 <td>
-<font color="orange" size="5">&#160;&#160;Data&#160;&#160;</font>
+<font color="orange" size="5">&#160;&#160;Valor&#160;&#160;</font>
 </td>
 <td>
-<font color="orange" size="5">&#160;&#160;Motivo&#160;&#160;</font>
+<font color="orange" size="5">&#160;&#160;Nome&#160;&#160;</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;Ganhos&#160;&#160;</font>
+<font color="#4FFF30" size="5">&#160;&#160;Cidade&#160;&#160;</font>
 </td>
 <td>
-<font color="orange" size="5">&#160;&#160;Data&#160;&#160;</font>
+<font color="orange" size="5">&#160;&#160;Estado&#160;&#160;</font>
 </td>
-<td>
-<font color="orange" size="5">&#160;&#160;Doador&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;Cidade&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">Saldo Disponivel&#160;&#160;</font>
-</td>
-<td>
-</tr>
 
-<tr>
-<td>
-<font color="red" size="5">&#160;&#160;270&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;S/Data&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;Componentes Mesa de Som&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="red" size="5">&#160;&#160;-270&#160;&#160;</font>
-</td>
-</tr>
-
-<tr>
-<td>
-<font color="red" size="5">&#160;&#160;250&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;24/06/2023&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;Primeira Parcela Transmissor&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="red" size="5">&#160;&#160;-520&#160;&#160;</font>
-</td>
-</tr>
-
-<tr>
-<td>
-<font color="red" size="5">&#160;&#160;61,26&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;24/06/2023&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;Melhora da Mesa de Som&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="red" size="5">&#160;&#160;-581,26&#160;&#160;</font>
-</td>
-</tr>
-
-<tr>
-<td>
-<font color="red" size="5">&#160;&#160;39,43&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;25/06/2023&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;Microfone&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="red" size="5">&#160;&#160;-620,69&#160;&#160;</font>
-</td>
-</tr>
-
-<tr>
-<td>
-<font color="red" size="5">&#160;&#160;50,19&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;25/06/2023&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;Antena&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="red" size="5">&#160;&#160;-670,88&#160;&#160;</font>
-</td>
 </tr>
 
 <tr>
@@ -1156,54 +1012,22 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="red" size="5">&#160;&#160;0&#160;&#160;</font>
 </td>
 <td>
-<font color="orange" size="5">&#160;&#160;27/06/2023&#160;&#160;</font>
+<font color="orange" size="5">&#160;&#160;00/00/0000&#160;&#160;</font>
 </td>
 <td>
-<font color="orange" size="5">&#160;&#160;Fonte do Transmissor&#160;&#160;</font>
+<font color="orange" size="5">&#160;&#160;0&#160;&#160;</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;Fonte de Pc&#160;&#160;</font>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;27/06/2023&#160;&#160;</font>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
 </td>
 <td>
-<font color="#4FFF30" size="5">&#160;&#160;???&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;???&#160;&#160;</font>
-</td>
-<td>
-<font color="red" size="5">&#160;&#160;-670,88&#160;&#160;</font>
+<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
 </td>
 </tr>
 
-<tr>
-<td>
-<font color="red" size="5">&#160;&#160;???&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;???&#160;&#160;</font>
-</td>
-<td>
-<font color="orange" size="5">&#160;&#160;Cartao Qsl&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="#4FFF30" size="5">&#160;&#160;0&#160;&#160;</font>
-</td>
-<td>
-<font color="red" size="5">&#160;&#160;-670,88&#160;&#160;</font>
-</td>
-</tr>
 <tr>
 <td>
 <font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
