@@ -73,7 +73,7 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 
 <table id="cur" border="2" bgcolor="yellow">
 <tr>
-<td data-tooltip="Uma nova aba sera aberta ao clicar"><a target="_'blank'" href="http://alfredomarcondes.sdr.net.br:37001/"><font size="5">Escute ao vivo pelo sdr</font></a></td>
+<td data-tooltip="Uma nova aba sera aberta ao clicar"><a target="_'blank'" href="http://alfredomarcondes.sdr.net.br:37001/"><font size="5">Escute tambem pelo Sdr</font></a></td>
 </td>
 </tr>
 </table>
@@ -87,7 +87,7 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 <tr>
 <td>
 <video class="vidcss vidcss1" controls width="auto" height="380" poster="https://www.dropbox.com/s/d0zzfjri0jw4afn/IMG_20230129_164232724.jpg?dl=1">
-<source src="https://ais-sa1.streamon.fm/7838_128k.aac" type='video/mp4;'/>
+<source src="http://stream.zeno.fm/ydtc1aazchstv" type='video/mp4;'/>
 <!-- <track kind="subtitles" srclang="pt-br" label="Pt-Br" src="026.vtt"></track> -->
 </video>
 </td>
@@ -121,7 +121,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <div id="filme">
 
 <center>
-<font size="5" color="cc8400">A radio que esta tocando para teste é a<a target="_'blank'"  href="https://listen.streamon.fm/radiogpt" data-tooltip="Uma nova aba sera aberta ao clicar"> RadioGPT</a> uma radio gerenciada por uma IA e nao reflete o que esta sendo tocado na radio</font>
+<font size="5" color="cc8400">Se o player nao funcionar é por que a radio esta desligada no momento, confira em: <td data-tooltip="Veja os programas e horario de transmissao"><a onclick="prog()" href="#pro"><font size="5">Horarios</font></a></td><br>Normalmente a radio esta sendo ligada apos as 17:30 e fica ligada até umas 22:00 ou mais</font>
 </center><br><br>
 
 <!-- Tabela Propagaçao -->
@@ -183,10 +183,16 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <!-- Inicio tabela programaçao -->
 <center>
 <div id="pro">
-<font color="red" size="6">Programaçao</font><br><br>
+<font color="red" size="6">Programaçao</font><br>
+<font color="red" size="5">Os horario podem variar um pouco dependendo da semana<br>Unico horario fixo é o do boletim</font><br><br>
 
 <table border="2" bgcolor="black">
 
+<tr>
+<td>
+<font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a onclick="ini()" href="#topo">Fechar e Voltar ao Topo</a></font>
+</td>
+</tr>
 <tr>
 <td>
 <font color="#4FFF30" bgcolor="black" size="5">Horario&#160;</font>
@@ -218,25 +224,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">00:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -244,25 +250,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">01:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -270,25 +276,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">02:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -296,25 +302,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">03:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -322,25 +328,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">04:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -348,25 +354,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">05:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -374,25 +380,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">06:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -400,25 +406,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">07:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -426,25 +432,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">08:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -452,25 +458,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">09:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -478,25 +484,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">10:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -504,25 +510,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">11:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -530,25 +536,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">12:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -556,25 +562,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">13:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -582,26 +588,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">14:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
-</td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -609,25 +614,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">15:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -635,25 +640,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">16:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -661,25 +666,51 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">17:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="#4FFF30" size="5">17:30</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -687,25 +718,51 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">18:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;Boletim das Ondas Curtas&#160;&#160;</font>
+<font color="deepskyblue" size="5">&#160;&#160;Boletim das Ondas Curtas&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;Boletim das Ondas Curtas&#160;&#160;</font>
+<font color="deepskyblue" size="5">&#160;&#160;Boletim das Ondas Curtas&#160;&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="#4FFF30" size="5">18:15</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -713,25 +770,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">19:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -739,25 +796,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">20:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -765,25 +822,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">21:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -791,25 +848,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">22:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="yellow" size="5">&#160;&#160;Programa Musical&#160;&#160;</font>
 </td>
 </tr>
 <tr>
@@ -817,25 +874,25 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <font color="#4FFF30" size="5">23:00</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 <td>
-<font color="white" size="5">&#160;&#160;RadioGPT&#160;&#160;</font>
+<font color="white" size="5">&#160;&#160;Desligado&#160;&#160;</font>
 </td>
 </tr>
 <tr>
