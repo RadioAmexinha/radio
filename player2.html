@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Radio Amexinha</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css1player2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js1player2.js"></script>
+<script type="text/javascript" src="js2player2.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	if(navigator.userAgent.indexOf("Chrome") != -1) var isChrome = true;
+	if(navigator.userAgent.indexOf("Safari") != -1) var isSafari = true;
+	if(navigator.userAgent.indexOf("Firefox") != -1) var isFirefox = true; 
+
+	var suppliedFormat = "mp3";
+	if(isFirefox||isSafari||isChrome) suppliedFormat = "m4a";
+	
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function (event) {
+				$(this).jPlayer("setMedia", {
+						title: "Radio Amexinha",
+						m4a: "http://stream.zeno.fm/ydtc1aazchstv",
+						mp3: "http://stream.zeno.fm/ydtc1aazchstv"
+
+				}).jPlayer("play");
+		},
+		swfPath: "/wmr/dist/jplayer",
+		supplied: suppliedFormat,
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		remainingDuration: false,
+		toggleDuration: true
+	});
+});
+//]]>
+</script>
+<style>
+body {
+	width: 423px; 
+	margin: 0 auto;
+	overflow: hidden;
+	}
+</style>
+<body bgcolor="#000000">
+</head>
+<body>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="logo" class="center">
+    <div class="logo" style="width:423px;">
+        <img src="img/bannerp2.png" width="422px" height="259px" />
+    </div> </div>
+
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-stop" role="button" tabindex="0">stop</button>
+			</div>
+
+			<div class="jp-volume-controls">
+				<button class="jp-mute" role="button" tabindex="0">mute</button>
+				<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+				<div class="jp-volume-bar">
+					<div class="jp-volume-bar-value"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="jp-details">
+			<div class="jp-title" aria-label="title"></div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
