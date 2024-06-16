@@ -71,6 +71,10 @@ a:active {
 
 body {
   background: #183e7c url(*) no-repeat fixed top center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 465px;
 }
 
 table, th, td {
