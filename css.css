@@ -41,24 +41,24 @@ z-index:999
 /*Coisas Aleatorias
 --------------------------------------------------------------------------------------------------------------------------*/
 a {
-  color: (red);
+  color: red;
   text-decoration: none;
   cursor:pointer;
 }
 
 a:hover {
-  color: hotpink;
+  color: green;
   cursor:pointer;
 }
 
 a:link {
-  color: (red);
+  color: red;
   text-decoration: none;
   cursor:pointer;
 }
 
 a:visited {
-  color: green;
+  color: none;
   cursor:pointer;
 }
 
@@ -115,6 +115,11 @@ table, th, td {
 	position:absolute;
 }
 #ouvintes{
+	visibility:hidden;
+	position:absolute;
+}
+
+#pqsl{
 	visibility:hidden;
 	position:absolute;
 }

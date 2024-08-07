@@ -11,6 +11,8 @@ function prog() {
 		document.getElementById("espe").style.position = "absolute";
 		document.getElementById("ouvintes").style.visibility = " hidden";
 		document.getElementById("ouvintes").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " hidden";
+		document.getElementById("pqsl").style.position = "absolute";
 		}
 
 function cont() {
@@ -26,6 +28,8 @@ function cont() {
 		document.getElementById("espe").style.position = "absolute";
 		document.getElementById("ouvintes").style.visibility = " hidden";
 		document.getElementById("ouvintes").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " hidden";
+		document.getElementById("pqsl").style.position = "absolute";
 		}
 
 function aju() {
@@ -41,6 +45,8 @@ function aju() {
 		document.getElementById("espe").style.position = "absolute";
 		document.getElementById("ouvintes").style.visibility = " hidden";
 		document.getElementById("ouvintes").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " hidden";
+		document.getElementById("pqsl").style.position = "absolute";
 		}
 
 function sobr() {
@@ -56,6 +62,8 @@ function sobr() {
 		document.getElementById("espe").style.position = "absolute";
 		document.getElementById("ouvintes").style.visibility = " hidden";
 		document.getElementById("ouvintes").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " hidden";
+		document.getElementById("pqsl").style.position = "absolute";
 		}
 
 function esp() {
@@ -71,6 +79,8 @@ function esp() {
 		document.getElementById("sobre").style.position = "absolute";
 		document.getElementById("ouvintes").style.visibility = " hidden";
 		document.getElementById("ouvintes").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " hidden";
+		document.getElementById("pqsl").style.position = "absolute";
 		}
 
 function ouv() {
@@ -86,6 +96,8 @@ function ouv() {
 		document.getElementById("sobre").style.position = "absolute";
 		document.getElementById("espe").style.visibility = " hidden";
 		document.getElementById("espe").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " hidden";
+		document.getElementById("pqsl").style.position = "absolute";
 		}
 		
 function ini() {
@@ -101,4 +113,23 @@ function ini() {
 		document.getElementById("espe").style.position = "absolute";
 		document.getElementById("ouvintes").style.visibility = " hidden";
 		document.getElementById("ouvintes").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " hidden";
+		document.getElementById("pqsl").style.position = "absolute";
+		}
+		
+function qsl() {
+		document.getElementById("con").style.visibility = "hidden";
+		document.getElementById("pro").style.visibility = "hidden";
+		document.getElementById("ajude").style.visibility = "hidden";
+		document.getElementById("con").style.position = "absolute";
+		document.getElementById("pro").style.position = "absolute";
+		document.getElementById("ajude").style.position = "absolute";
+		document.getElementById("sobre").style.visibility = " hidden";
+		document.getElementById("sobre").style.position = "absolute";
+		document.getElementById("espe").style.visibility = " hidden";
+		document.getElementById("espe").style.position = "absolute";
+		document.getElementById("ouvintes").style.visibility = " hidden";
+		document.getElementById("ouvintes").style.position = "absolute";
+		document.getElementById("pqsl").style.visibility = " visible";
+		document.getElementById("pqsl").style.position = "relative";
 		}
