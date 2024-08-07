@@ -36,17 +36,19 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 
 <table border="2" bgcolor="yellow">
 <tr>
-<td data-tooltip="Veja os programas e horario de transmissao"><a onclick="prog()" href="#pro"><font size="5">Programaçao e Horarios</font></a></td>
+<td data-tooltip="Veja os programas e horario de transmissao"><a onclick="prog()" href="#pro"><font size="5">&#160;Programaçao e Horarios&#160;</font></a></td>
 
-<td data-tooltip="Veja as formas de entrar em contao"><a onclick="cont()" href="#con"><font size="5">Contatos</font></a></td>
+<td data-tooltip="Como pedir seu qsl"><a onclick="qsl()" href="#pqsl"><font size="5">&#160;Qsl&#160;</font></a></td>
 
-<td data-tooltip="Veja como ajudar a radio"><a onclick="aju()" href="#ajude"><font size="5">Faça uma Doaçao</font></a></td>
+<td data-tooltip="Veja as formas de entrar em contao"><a onclick="cont()" href="#con"><font size="5">&#160;Contatos&#160;</font></a></td>
 
-<td data-tooltip="Informaçoes sobre a radio"><a onclick="sobr()" href="#sobre"><font size="5">Sobre a Radio</font></a></td>
+<td data-tooltip="Veja como ajudar a radio"><a onclick="aju()" href="#ajude"><font size="5">&#160;Faça uma Doaçao&#160;</font></a></td>
 
-<td data-tooltip="Informaçoes tecnicas sobre a radio"><a onclick="esp()" href="#espe"><font size="5">Transmissor/Frequencia</font></a></td>
+<td data-tooltip="Informaçoes sobre a radio"><a onclick="sobr()" href="#sobre"><font size="5">&#160;Sobre a Radio&#160;</font></a></td>
 
-<td data-tooltip="Veja os ouvintes que sintonizaram a emissora"><a onclick="ouv()" href="#ouvintes"><font size="5">Ouvintes</font></a></td>
+<td data-tooltip="Informaçoes tecnicas sobre a radio"><a onclick="esp()" href="#espe"><font size="5">&#160;Transmissor/Frequencia&#160;</font></a></td>
+
+<td data-tooltip="Veja os ouvintes que sintonizaram a emissora"><a onclick="ouv()" href="#ouvintes"><font size="5">&#160;Ouvintes&#160;</font></a></td>
 
 <td data-tooltip="Canal do Youtube, abrira em uma nova aba"><a target="_'blank'" href="https://www.youtube.com/@RadioAmexinha"><img height="30" width="35" src="img/Yt.png"></a></td>
 
@@ -935,6 +937,11 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <td>
 <font color="red" size="4" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
 </td>
+
+<td>
+<font color="red" size="4" data-tooltip="Voltar para a pagina de qsl"><a onclick="qsl()" href="#pqsl">Pagina Qsl</font>
+</td>
+
 </tr>
 
 </table>
@@ -1503,6 +1510,156 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </div>
 <!-- Fim Tabela Ouvintes -->
 
+<!-- Tabela Qsl -->
+
+<div id="pqsl" style="text-align:center">
+
+<div style="background-color:#00FAFF"><font color="red" size="6">Qsl</font></div><br>
+
+<div style="background-color:white"><font color="black" size="5">
+Como todos ouvem no anuncio que transmito a cada 30 minutos eu envio cartoes QSL impresso a todos que enviarem um video sintonizando a emissora ou um informe de recepçao atravez de um dos<a onclick="cont()" href="#con"><font size="5"> contatos</font></a>, porem a cidade aqui é pequena e tem apenas uma grafica que faz esse tipo de coisas e ela fica na cidade vizinha
+</font></div><br>
+
+<div style="background-color:white"><font color="black" size="5">
+As coisas por aqui e acho que em todo o brasil ficaram caras, tanto para fazer os cartoes quanto a gasolina que gasto para ir a cidade e a energia para as transmissoes
+</font></div><br>
+
+<div style="background-color:white"><font color="black" size="5">
+Com isso quero dizer que continuarei a enviar GRATUITAMENTE cartoes QSL impressos a qualquer parte do mundo aos que sintonizarem a emissora diretamente VIA RADIO
+</font></div><br>
+
+<div style="background-color:white"><font color="black" size="5">
+Para aqueles que ouvem via Sdr seus informes ainda sao muito bem vindos e ajudam a ter uma ideia da onde a emissora esta chegando, porem por causa dos custos nesse caso nao poderei enviar o QSL impresso e responderei com um eQSL identico ao fisico, outra opçao que vi algumas emissoras de fora fazendo e é uma opçao seria COBRAR pelo cartao QSL impresso APENAS PARA QUEM OUVIU VIA SDR e queira receber o cartao fisico
+</font></div><br>
+
+<div style="background-color:white"><font color="black" size="5">
+Se voce ouviu via Web Sdr no Brasil ou em qualquer parte do mundo ficarei feliz em receber seu informe e responderei com um eQSL
+</font></div><br>
+
+<div style="background-color:#00FAFF"><font color="red" size="6">Peça o seu</font></div><br>
+
+<div style="background-color:white"><font color="black" size="5">
+Para pedir o seu entre em contato pelo whats ou email da aba <a onclick="cont()" href="#con"><font size="5">contatos</font></a> e envie:
+</font></div><br>
+
+<center>
+<table border="2" bgcolor="black">
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Sintonia Direta&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Web Sdr&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Nome&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Nome&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Cidade da recepçao&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Cidade da recepçao&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;---&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Cidade do Sdr&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Endereço&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;---&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Cep&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;---&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Video ou audio da sintonia&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Video ou audio do Sdr&#160;&#160;</font>
+</td>
+</tr>
+</table>
+
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="Yellow" size="5">&#160;&#160;Opcional&#160;&#160;</font>
+</td>
+</tr>
+</table>
+
+<table border="2" bgcolor="black">
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Codigo SIMPO&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;Codigo SIMPO&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Receptor ultilizado&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;---&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;Antena ultilizada&#160;&#160;</font>
+</td>
+<td>
+<font color="orange" size="5">&#160;&#160;---&#160;&#160;</font>
+</td>
+</tr>
+</table>
+</center>
+
+<div style="background-color:white"><font color="black" size="5">
+Para sintonia direta nao sera cobrado NADA pelo QSL impresso
+</font></div><br>
+<div style="background-color:white"><font color="black" size="5">
+Para sintonia VIA SDR nao sera cobrado nada pelo eQSL, caso queira o IMPRESSO sera COBRADO uma taxa de R$10,00 para cobrir os gastos com envio e confecçao
+</font></div><br>
+
+<font color="red" size="4" style="background-color:black" data-tooltip="Feche a tabela e volte para as opçoes"><a href="#topo" onclick="ini()">Fechar e Voltar ao Topo</a></font>
+
+
+
+<!-- Fim Tabela Qsl -->
 </div>
 
 <br>
