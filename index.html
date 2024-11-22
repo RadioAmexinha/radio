@@ -1,8 +1,14 @@
+<!-- links Js Css Ico -->
 <link rel="shortcut icon" href="img/5.png" type="image/x-icon" />
 <link rel="stylesheet" href="player.css">
 <link rel="stylesheet" href="css.css">
 <script src="video.js"></script>
 <script src="scripts.js"></script>
+
+<!-- Fim links Js Css Ico -->
+
+<!-- Fontes TTF -->
+
 <style>
 @font-face {
    font-family: fonte1;
@@ -10,6 +16,10 @@
 }
 
 </style>
+
+<!-- Fim Fontes TTF -->
+
+<!-- Js Titulo -->
 
 <script language="JavaScript">
 
@@ -30,9 +40,13 @@ var speed = 30;
 var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;if (reps < 1) reps = 1;function doTheThing() {T = message[mC];A();}function A() {s++;if (s > 8) { s = 1;}if (s == 1) { document.title = ''+T+''; }if (s == 2) { document.title = ''+T+''; }if (C < (8 * reps)) {sT = setTimeout("A()", speed);C++;}else {C = 0;s = 0;mC++;if(mC > p - 1) mC = 0;sT = null;doTheThing();}}doTheThing();
 </script>
 
+<!-- Fim Js Titulo -->
+
 <div id="filme" align="center">
 
 <div id="topo"></div>
+
+<!-- Botoes Menu -->
 
 <table border="2" bgcolor="yellow">
 <tr>
@@ -61,6 +75,10 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 </tr>
 </table>
 
+<!-- Fim Botoes Menu -->
+
+<!-- Textos Aleatorios -->
+
 <br><table border="2" bgcolor="yellow">
 <tr><td><font size="5">Escolha uma opçao acima</font></td><tr>
 </table>
@@ -71,9 +89,14 @@ var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;i
 <tr><td><font size="5" color="red">
 Voltamos ao Horario Normal de antes<br>
 </table>
+
+<!-- Fim Textos Aleatorios -->
+
 <br>
 <br>
 <br>
+
+<!-- Botao Luz -->
 
 <table id="cur" border="2" bgcolor="yellow">
 <tr>
@@ -83,7 +106,11 @@ Voltamos ao Horario Normal de antes<br>
 </tr>
 </table>
 
+<!-- Fim Botao Luz -->
+
 <br><BR><BR>
+
+<!-- SDR -->
 
 <table id="cur" border="2" bgcolor="yellow">
 <tr>
@@ -92,8 +119,12 @@ Voltamos ao Horario Normal de antes<br>
 </tr>
 </table>
 
+<!-- Fim SDR -->
+
 <br>
 <br>
+
+<!-- Player -->
 
 <font color="white" face="fonte1" size="6">Escute a radio no play abaixo</font>
 
@@ -107,6 +138,10 @@ Voltamos ao Horario Normal de antes<br>
 </td>
 </tr>
 </table>
+
+<!-- Fim Player -->
+
+<!-- Js Luz -->
 
 <script>
 video = document.querySelector('video'),
@@ -128,15 +163,75 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 });
 </script>
 
+<!-- Fim Js Luz -->
+
 </div>
 
 <div id="opacidade"></div>
 
 <div id="filme">
-
+<!-- Chiado -->
 <center>
 <font size="5" color="cc8400">Se ouvir apenas chiado é porque a radio esta desligada no momento, confira em: <td data-tooltip="Veja os programas e horario de transmissao"><a onclick="prog()" href="#pro"><font size="5">Horarios</font></a></td><br>Normalmente a radio esta sendo ligada apos as 15:00 e fica ligada até umas 23:00 ou mais</font>
 </center><br><br>
+
+<!-- Fim Chiado -->
+
+<!-- Tabela Propagaçao -->
+<div id="prop">
+<center>
+<img decoding="async" src="https://www.hamqsl.com/solar101pic.php" alt="Solar Terrestrial Data" border="0"><br><br>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="red" size="4">Propagaçao de Ondas Medias</font>
+</td>
+</tr>
+</table>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="white" size="4">&#160;SFI</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;60 a 120&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="4">&#160;Ruim&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;120 a 180&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="4">&#160;Moderada&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;180 a 240&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="#039903" size="4">&#160;Boa&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;240 ou mais&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="#04FE04" size="4">&#160;Muito boa&#160;</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+
+<br><br><br><br><br>
+<!-- Fim Tabela Propagaçao -->
 
 <!-- Inicio tabela programaçao -->
 <center>
@@ -147,6 +242,12 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 <div style="background-color:#0078D7"><font color="skyblue" size="5">Programa Boa Noite Brasil</font><font color="#4CFF00" size="5"> é um programa independente</font></div><br>
 
 <div style="background-color:#0078D7"><font color="#FFC800" size="5">Voce tem um progama, podcast ou é musico e quer divulgar seu trabalho em uma radio mas as grandes emissoras nao querem lhe divulgar ou cobram muito caro?<br>Entre em <a onclick="cont()" href="#con"><font size="5">contato</font></a> e negocie seu horario aqui na emissora</font></div><br><br>
+
+<table border="2" bgcolor="yellow">
+<tr>
+<td data-tooltip="Veja tambem a tabela de Programaçao no RadioBox"><a target="_'blank'" href="https://onlineradiobox.com/br/amexinha/program/"><img height="60" width="300" src="https://cdn.onlineradiobox.com/img/b/p_banner1.png"></a></td>
+</tr>
+</table>
 
 <table border="2" bgcolor="black">
 
@@ -1763,7 +1864,7 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 
 <tr>
 <td>
-<font color="red" size="5">&#160;&#160;03/10/2024&#160;&#160;</font>
+<font color="red" size="5">&#160;&#160;03/11/2024&#160;&#160;</font>
 </td>
 <td>
 <font color="#FF6A00" size="5">&#160;&#160;Wilian&#160;&#160;</font>
@@ -1773,6 +1874,42 @@ $('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
 </td>
 <td>
 <font color="#4FFF30" size="5">&#160;&#160;Pr&#160;&#160;</font>
+</td>
+<td>
+<font color="blue" size="5">&#160;&#160;Brasil&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;15/11/2024&#160;&#160;</font>
+</td>
+<td>
+<font color="#FF6A00" size="5">&#160;&#160;Pablo Bernardoni&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Vila Velha</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;ES&#160;&#160;</font>
+</td>
+<td>
+<font color="blue" size="5">&#160;&#160;Brasil&#160;&#160;</font>
+</td>
+</tr>
+
+<tr>
+<td>
+<font color="red" size="5">&#160;&#160;21/11/2024&#160;&#160;</font>
+</td>
+<td>
+<font color="#FF6A00" size="5">&#160;&#160;João Vitor Fernandes&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="5">&#160;&#160;Álvares Machado</font>
+</td>
+<td>
+<font color="#4FFF30" size="5">&#160;&#160;SP&#160;&#160;</font>
 </td>
 <td>
 <font color="blue" size="5">&#160;&#160;Brasil&#160;&#160;</font>
