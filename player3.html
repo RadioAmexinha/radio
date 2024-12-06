@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#08298a">
+    <title>Radio Amexinha</title>
+
+    <link href="https://studiobala.com.br/player1/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://studiobala.com.br/player1/js/lunaradio-animado.js"></script>
+    <style>
+        html,
+        body {
+            font-family: "Open Sans", sans-serif;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            color: #272829;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height:100%">
+        <header id="header">
+            
+        </header>
+
+
+        <div id="player"></div>
+        <div id="player"></div>
+        <script>
+            $("#player").lunaradio({
+userinterface: "big", 
+backgroundcolor: "rgba(9,15,25,0.8)",
+fontcolor: "#ffffff",
+hightlightcolor: "#000000", 
+fontname: "Saira Condensed", 
+googlefont: "Saira+Condensed:wght@100", 
+fontratio: "0.4", 
+radioname: "Radio Amexinha", 
+scroll: "true", 
+coverimage: "img/image.jpg",
+onlycoverimage: "false",
+coverstyle: "animated",
+usevisualizer: "real", 
+visualizertype: "8", 
+itunestoken: "1000lIPN", 
+metadatatechnic: "fallback", //fallback (usar para zeno)
+corsproxy: "",
+usestreamcorsproxy: "false",
+streamurl: "http://stream.zeno.fm/ydtc1aazchstv",
+streamtype: "zeno", //soporta: zeno, icecast2, shoutcast2
+idzeno: "ydtc1aazchstv",
+icecastmountpoint: "", 
+shoutcastpath: "",
+shoutcastid: "1", 
+metadatainterval: "26000", 
+volume: "100",
+debug: "false",
+autoplay: "false",
+displayliveicon: "true",
+visualizeropacity: "1.0",
+multicolorvisualizer: "true",
+color1: "#00FF00",
+color2: "#ffff00",
+color3: "#FF1F6F",
+color4: "#FF1F6F",
+});
+        </script>
+
+
+        <div class="background_hora">
+            <div id="relogio">15:00:05</div>
+        </div>
+        <script>
+            function reloj() {
+let elementoID = document.getElementById('relogio');
+let horalocal = new Date().toLocaleTimeString('es');
+elementoID.innerHTML = horalocal;
+}
+setInterval(reloj, 1000);
+        </script>
+    </div>
+
+    <script>
+        $(".mobile-nav-toggle").click(function(){
+$("body").toggleClass("mobile-nav-active");
+$(".mobile-nav-toggle i").toggleClass("fa-bars fa-times");
+});
+    </script>
+</body>
+
+</html>
