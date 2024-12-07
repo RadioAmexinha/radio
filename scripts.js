@@ -1,3 +1,5 @@
+
+/* Funçoes do Nenu*/
 function prog() {
 		document.getElementById("pro").style.visibility = " visible";
 		document.getElementById("pro").style.position = "relative";
@@ -133,3 +135,24 @@ function qsl() {
 		document.getElementById("pqsl").style.visibility = " visible";
 		document.getElementById("pqsl").style.position = "relative";
 		}
+/* Fim Funçoes do Nenu*/
+
+/* Funçoes Aleatorias*/	
+
+/* Relogio*/	
+function reloj() {
+		let elementoID = document.getElementById('relogio');
+		let horalocal = new Date().toLocaleTimeString('es');
+		elementoID.innerHTML = horalocal;
+		}
+		setInterval(reloj, 1000);
+		
+function reloj2() {
+		let elementoID = document.getElementById('relogio2');
+		let horalocal = new Date().toLocaleTimeString('es');
+		elementoID.innerHTML = horalocal;
+		}
+		setInterval(reloj2, 1000);
+/* Fim Relogio*/
+
+/* Funçoes Aleatorias*/	
