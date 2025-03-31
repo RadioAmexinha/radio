@@ -1,0 +1,239 @@
+<!-- links Js Css Ico -->
+<link rel="shortcut icon" href="img/5.png" type="image/x-icon" />
+<link rel="stylesheet" href="player.css">
+<link rel="stylesheet" href="css.css">
+<script src="video.js"></script>
+<script src="scripts.js"></script>
+<script src="m3u8.js"></script>
+
+<!-- Fim links Js Css Ico -->
+
+<!-- Fontes TTF -->
+
+<style>
+@font-face {
+   font-family: fonte1;
+   src: url(fonte100nome.ttf);
+}
+
+</style>
+
+<!-- Fim Fontes TTF -->
+
+<!-- Js Titulo -->
+
+<script language="JavaScript">
+
+var message = new Array();
+
+message[0] = "Radio";
+
+message[1] = "Amexinha";
+
+message[2] = "7550Khz";
+
+message[3] = "100w de potencia";
+
+message[4] = ".";
+
+var reps = 5;
+var speed = 30;
+var p = message.length;var T = "";var C = 0;var mC = 0;var s = 0;var sT = null;if (reps < 1) reps = 1;function doTheThing() {T = message[mC];A();}function A() {s++;if (s > 8) { s = 1;}if (s == 1) { document.title = ''+T+''; }if (s == 2) { document.title = ''+T+''; }if (C < (8 * reps)) {sT = setTimeout("A()", speed);C++;}else {C = 0;s = 0;mC++;if(mC > p - 1) mC = 0;sT = null;doTheThing();}}doTheThing();
+</script>
+
+<!-- Fim Js Titulo -->
+
+<div id="filme" align="center">
+
+<div id="topo"></div>
+
+<!-- Botao Luz -->
+
+<table id="cur" border="2" bgcolor="yellow">
+<tr>
+<td data-tooltip="Escureça o fundo para destacar as palavras">
+<font size="5"><botao>Clique para escurecer o fundo</botao></font>
+</td>
+</tr>
+</table>
+
+<!-- Fim Botao Luz -->
+
+<br><BR><BR>
+
+<!-- SDR -->
+
+<table id="cur" border="2" bgcolor="yellow">
+<tr>
+<td data-tooltip="Uma nova aba sera aberta ao clicar"><a target="_'blank'" href="http://alfredomarcondes.sdr.net.br:37001/"><font size="5">Escute tambem pelo Sdr</font></a></td>
+</td>
+</tr>
+</table>
+
+<!-- Fim SDR -->
+
+<br>
+<br>
+
+<!-- Player -->
+
+<font color="white" face="fonte1" size="6">Escute a radio no play abaixo</font>
+
+<table border="1" width="515" bgcolor="yellow">
+<tr>
+<td>
+<video class="vidcss vidcss1" controls width="auto" height="380" poster="img/icoplayer1.jpg" id="video">
+<!-- <track kind="subtitles" srclang="pt-br" label="Pt-Br" src="026.vtt"></track> -->
+</video>
+<script>
+    var video = document.getElementById('video');
+    if(Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource('https://tinyurl.com/livealeatoria');
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MANIFEST_PARSED,function() {
+        video.play();
+    });
+    }
+    </script>
+</td>
+</tr>
+</table>
+
+<!-- Fim Player -->
+
+<!-- Js Luz -->
+
+<script>
+video = document.querySelector('video'),
+
+
+player = videojs(video);
+			
+$(document).ready(function(){
+$('#opacidade').css('height', $(document).height()).hide();
+$('botao').click(function() {
+$('#opacidade').toggle();
+ 
+if ($('#opacidade').is(':hidden')) {
+$('botao').html('Clique para escurecer o fundo');
+} else {
+$('botao').html('Clique para clarear&#160;&#160;&#160;&#160;&#160;o fundo');
+}
+});
+});
+</script>
+
+<!-- Fim Js Luz -->
+
+</div>
+
+<div id="opacidade"></div>
+
+<div id="filme">
+
+<!-- Musica Tocando -->
+
+<center>
+
+<table id="mus" border="2" bgcolor="#133F00">
+
+<tr id="mus">
+<td id="mus">
+
+<center>
+<font size="5" color="#FFCA89">Se ouvir apenas chiado é porque a radio esta desligada no momento, confira em: <ra data-tooltip="Veja os programas e horario de transmissao"><a onclick="prog()" href="#pro"><font size="5">Horarios</font></a></ra><br>
+</center>
+
+</td>
+</tr>
+<tr id="mus">
+<td id="mus">
+
+<center>
+<font size="5" color="#FFCA89">Confira abaixo o nome da musica que esta tocando no momento</font>
+</center>
+
+<tr id="mus">
+<td id="mus">
+<center>
+<font size="5" color="#FFCA89"><div id="relogio">Relogio</div></font>
+</center>
+</td>
+</tr>
+
+</td>
+</tr>
+<tr id="mus">
+<td id="mus">
+
+<center>
+<iframe  width="335" height="70" src="data:text/html;base64,PHN0eWxlPg0KLmltYWdlbS13cmFwcGVyIHsNCiAgICBoZWlnaHQ6IDEyMHB4Ow0KICAgIHdpZHRoOiA2MDBweDsNCiAgICBvdmVyZmxvdzogaGlkZGVuOw0KICAgIHBvc2l0aW9uOiByZWxhdGl2ZTsNCn0NCi5pbWFnZW0gew0KICAgIHdpZHRoOiA1MDBweDsNCiAgICBwb3NpdGlvbjogYWJzb2x1dGU7DQogICAgdG9wOiAtODAlOw0KCWxlZnQ6IC0xMDU7DQp9DQo8L3N0eWxlPg0KDQo8ZGl2IGNsYXNzPSJpbWFnZW0td3JhcHBlciI+DQogICAgPGlmcmFtZSBjbGFzcz0iaW1hZ2VtIiBzcmM9Imh0dHBzOi8vemVuby5mbS9wbGF5ZXIvcmFkaW9hbWV4aW5oYSIgZnJhbWVib3JkZXI9IjAiIHNjcm9sbGluZz0ibm8iPjwvaWZyYW1lPg0KPC9kaXY+" frameborder="0" ebkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no">
+</iframe>
+</center>
+
+</td>
+</tr>
+</table>
+</center>
+<br>
+
+<!-- Fim Musica Musica Tocando -->
+
+<!-- Tabela Propagaçao -->
+<div id="prop">
+<center>
+<img decoding="async" src="https://www.hamqsl.com/solar101pic.php" alt="Solar Terrestrial Data" border="0"><br><br>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="red" size="4">Propagaçao de Ondas Medias</font>
+</td>
+</tr>
+</table>
+<table border="2" bgcolor="black">
+<tr>
+<td>
+<font color="white" size="4">&#160;SFI</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;60 a 120&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="red" size="4">&#160;Ruim&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;120 a 180&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="yellow" size="4">&#160;Moderada&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;180 a 240&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="#039903" size="4">&#160;Boa&#160;</font>
+</td>
+</tr>
+<tr>
+<td>
+<font color="white" size="4">&#160;240 ou mais&#160;&#160;&#160;&#160;</font>
+</td>
+<td>
+<font color="#04FE04" size="4">&#160;Muito boa&#160;</font>
+</td>
+</tr>
+</table>
+</center>
+</div>
+
+<br><br><br><br><br>
+<!-- Fim Tabela Propagaçao -->
+
+</div>
